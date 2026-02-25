@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-      <div className='main.container'>
+      <div className='main-container'>
         <section className='column-left'>
           <h1> Javier Alonso </h1>
           <p>Full Stack Developer</p>
