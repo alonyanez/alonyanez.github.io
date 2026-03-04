@@ -1,16 +1,37 @@
-# React + Vite
+# 🌈 Rainbow Unicorn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Rainbow Unicorn](./assets/rainbow-unicorn.gif)
 
-Currently, two official plugins are available:
+Plantilla para desarrolladores que quieren tener un portafolio con un diseño tipo Bento minimalista y con una funcionalidad espectacular de reorganizar secciones.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[![Diseño de Unicorn Sparkle](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/RPSa9nHARMmnTemhrGuTCZ/Portafolio-dev?node-id=44-1034&t=dIZVva7mcSSduV6j-1)
+[![Sitio web de Unicorn Sparkle](https://img.shields.io/website?url=https%3A%2F%2Funicorn-sparkle.web.app&style=for-the-badge)](https://unicorn-sparkle.web.app)
 
-## React Compiler
+## 📦 Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ [Vite](https://vite.dev) - Herramienta de creación rápida que impulsa la próxima generación de aplicaciones web.
+- ⚛️ [React](https://react.dev) - Librería de JavaScript para construir interfaces de usuario.
+- 💅 [CSS](https://lenguajecss.com/css/) - Lenguaje de estilo para páginas web.
+- 🏷️ [Typescript](https://www.typescriptlang.org) - JavaScript con sintaxis para tipos.
 
-## Expanding the ESLint configuration
+## 🤔 ¿Cómo usar?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para utilizar la plantilla **Rainbow Unicorn** puedes copiar y ejecutar el siguiente comando en tu terminal:
+
+Con NPM:
+
+```bash
+npx giget@latest gh:UXCorpRangel/portfolios-dev/rainbow-unicorn myPortfolio
+```
+
+Con PNPM:
+
+```bash
+pnpx giget@latest gh:UXCorpRangel/portfolios-dev/rainbow-unicorn myPortfolio
+```
+
+Luego entra en la carpeta de tu portafolio, instala las dependencias y ¡listo! 🎉.
+
+---
+
+Diseñado con ❤️ por [Ana Rangel](https://www.linkedin.com/in/ux-ana-rangel) y desarrollado con 💙 por [Facundo D'Andrea](https://facundodandrea.vercel.app).
