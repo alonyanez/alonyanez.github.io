@@ -7,7 +7,6 @@ import {
   AboutCard,
   StudiesCard,
   StatusCard,
-  FooterCard,
   WorkCard,
 } from '@/components/cards/index'
 import { studies } from '@/data/studies'
