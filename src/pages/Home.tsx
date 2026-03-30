@@ -118,7 +118,7 @@ const Home = () => {
         <div key='5' className='grid-item' onClick={e => e.stopPropagation()}>
           <WorkCard
             companyName=''
-            link=''
+            link='http://localhost:5173/login'
             projectName='Proyecto 1: Full Stack'
           />
         </div>
