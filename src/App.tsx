@@ -8,6 +8,7 @@ import Register from '@/pages/Register'
 import Dashboard from '@/pages/Dashboard'
 import { authService } from './services/authService'
 import { JSX } from 'react'
+import TareaForm from './pages/TareaForm'
 
 function PrivateRoute({ children }: { children: JSX.Element }) {
   return authService.isAuthenticated() ? children : <Navigate to="/login" />
@@ -20,6 +21,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/dashboard' element={<Dashboard/>} />
       <Route path='/login' element={<Login />} />
+      <Route path='/tareas/nueva' element={<TareaForm />} />
       <Route path='/register' element={<Register />} />
       <Route path='/dashboard' element={
         <PrivateRoute>
@@ -28,7 +30,7 @@ function App() {
       } />
 
       <Route path='/projects/:slug' element={<ProjectDetails />} />
-      <Route path='*' element={<Home />} />
+      <Route path='*' element={<Navigate to='/'/>} />
     </Routes>
   )
 }
