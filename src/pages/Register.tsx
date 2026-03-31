@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { authService } from '../services/authService';
 
 export default function Register() {
@@ -44,7 +44,7 @@ export default function Register() {
           Registrarse
         </button>
         <p className="mt-4 text-center">
-          ¿No tienes cuenta? <a href="/register" className="text-blue-500">Regístrate</a>
+          ¿No tienes cuenta? <Link to="/register" className="text-blue-500">Regístrate</Link>
         </p>
       </form>
     </div>

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://localhost:8080';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'dpg-d75669ma2pns73b1a9s0-a.frankfurt-postgres.render.com';
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
