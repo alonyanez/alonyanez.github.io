@@ -28,7 +28,7 @@ function App() {
       } />
 
       <Route path='/projects/:slug' element={<ProjectDetails />} />
-      <Route path='*' element={'404 - Page not found'} />
+      <Route path='*' element={<Home />} />
     </Routes>
   )
 }

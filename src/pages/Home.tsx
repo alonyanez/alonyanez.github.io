@@ -126,7 +126,7 @@ const Home = () => {
           <WorkCard
             companyName=''
             link=''
-            projectName='Proyecto 2: Python + Análisis de datos'
+            projectName='Proyecto 2: Python + Análisis'
           />
         </div>
         <div key='7' className='grid-item' onClick={e => e.stopPropagation()}>
