@@ -44,12 +44,6 @@ export default function Login() {
         <p className="mt-4 text-center">
           ¿No tienes cuenta? <Link to="/register" className="text-blue-500">Regístrate</Link>
         </p>
-        <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded">
-          Volver al inicio
-        </button>
-        <p className="mt-4 text-center">
-          ¿Ya tienes cuenta? <Link to="/home" className="text-blue-500">Volver al inicio</Link>
-        </p>
       </form>
       <button type="button" onClick={() => navigate('/')} className="w-full bg-blue-500 text-white p-2 rounded">
           Volver al inicio
