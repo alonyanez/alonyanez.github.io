@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { authService } from '../services/authService';
 
+import Button from '@/components/button/Button';
+import './Login.css'; 
+import '@fontsource-variable/onest';
+
 export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -21,40 +25,50 @@ export default function Register() {
     }
   };
 
-  const handleNavigateHome = () => {
-    navigate('/');
-  };
-
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-96">
-        <h2 className="text-2xl mb-4">Registrarse</h2>
-        {error && <div className="text-red-500 mb-4">{error}</div>}
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 mb-2 border rounded"
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 mb-4 border rounded"
-        />
-        <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded">
-          Registrarse
-        </button>
-        <p className="mt-4 text-center">
-          ¿Ya tienes cuenta? <Link to="/login" className="text-blue-500">Inicia sesión</Link>
-        </p>
-        
-      </form>
-      <button type="button" onClick={handleNavigateHome} className="w-full bg-blue-500 text-white p-2 rounded">
-          Volver al inicio
-      </button>
+   
+    <div className="login-container"><div className="login-card">
+        <h2 className="login-title">Registrarse</h2>
+        <p className="login-subtitle">Gestiona tus tareas de forma eficiente</p>
+
+        <form onSubmit={handleSubmit} className="login-form">
+          {error && <div className="login-error">{error}</div>}
+          
+          <input
+            type="email"
+            placeholder="Correo electrónico"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="login-input"
+          />
+          
+          <input
+            type="password"
+            placeholder="Contraseña"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="login-input"
+          />
+
+          <Button variant="primary" style={{ width: '100%', padding: '1rem' }}>
+            Entrar
+          </Button>
+
+          <p className="login-footer">
+            ¿Ya tienes cuenta? <Link to="/login" className="login-link">Inicia sesión</Link>
+          </p>
+        </form>
+
+        <div className="divider"></div>
+
+        <Button 
+          onClick={() => navigate('/')} 
+          variant="primary"
+          style={{ width: '100%', background: 'transparent', border: '1px solid rgba(255,255,255,0.1)' }}
+        >
+        Volver al inicio
+        </Button>
+      </div>
     </div>
   );
 }

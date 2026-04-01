@@ -62,10 +62,10 @@ export default function Login() {
 
         <Button 
           onClick={() => navigate('/')} 
-          variant="secondary" 
+          variant="primary"
           style={{ width: '100%', background: 'transparent', border: '1px solid rgba(255,255,255,0.1)' }}
         >
-          ← Volver al inicio
+        Volver al inicio
         </Button>
       </div>
     </div>
