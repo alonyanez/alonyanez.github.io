@@ -48,8 +48,10 @@ export default function Login() {
             className="login-input"
           />
 
-          {/* Usamos tu componente Button para que sea idéntico al Home */}
-          <Button variant="primary" style={{ width: '100%', padding: '1rem' }}>
+          <Button
+            type="submit"
+            variant="primary" 
+            style={{ width: '100%', padding: '1rem' }}>
             Entrar
           </Button>
 

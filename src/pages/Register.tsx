@@ -50,8 +50,11 @@ export default function Register() {
             className="login-input"
           />
 
-          <Button variant="primary" style={{ width: '100%', padding: '1rem' }}>
-            Entrar
+          <Button 
+            type="submit"
+            variant="primary" 
+            style={{ width: '100%', padding: '1rem' }}>
+            Registrarse
           </Button>
 
           <p className="login-footer">

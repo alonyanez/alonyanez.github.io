@@ -75,8 +75,8 @@ const Button: React.FC<ButtonProps> = ({
       </Link>
     )
   }
-
-  // CASO 3: Es un botón de acción (<button>) - ESTO ES LO QUE NECESITA EL LOGIN
+  
+  // CASO 3: Es un botón normal
   return (
     <button
       type={type}
