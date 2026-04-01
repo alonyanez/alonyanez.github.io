@@ -86,7 +86,7 @@ export default function Login() {
           onClick={() => navigate('/')}
           className="w-full bg-transparent border border-white/10 text-gray-300 hover:bg-white/5 p-4 rounded-2xl transition-all text-sm font-medium"
         >
-          ← Volver al inicio
+         Volver al inicio
         </button>
       </div>
     </div>
