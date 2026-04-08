@@ -16,7 +16,7 @@ import {
 } from '@/assets/icons'
 
 import './home.css'
-import Tags from '@/components/tags/Tags'
+//import Tags from '@/components/tags/Tags'
 //import '@fontsource-variable/onest'
 import ProjectCard from '@/components/cards/projectCard/projectCard'
 
@@ -136,15 +136,7 @@ const Home = () => {
               variant='icon'
               external={true}
             />
-            <Tags technology='HTML' />
-            <Tags technology='CSS' />
-            <Tags technology='JavaScript' />
-            <Tags technology='TypeScript' />
-            <Tags technology='Sass' />
-            <Tags technology='React' />
-            <Tags technology='Astro' />
-            <Tags technology='MySQL' />
-            <Tags technology='Node' />
+            
           </AboutCard>
         </div>
         <div key='1' className='grid-item' onClick={e => e.stopPropagation()}>
