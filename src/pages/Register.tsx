@@ -4,7 +4,7 @@ import { authService } from '../services/authService';
 
 import Button from '@/components/button/Button';
 import './Login.css'; 
-import '@fontsource-variable/onest';
+import '@fontsource-variable/onest/register.css';
 
 export default function Register() {
   const [email, setEmail] = useState('');

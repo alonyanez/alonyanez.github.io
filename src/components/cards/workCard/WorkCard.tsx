@@ -1,27 +1,26 @@
 import React from 'react'
 import './workCard.css'
-import Button from '@/components/button/Button'
-import { RightArrowUpIcon } from '@/assets/icons'
 
 interface WorkCardProps {
-  projectName: string
+  jobTitle: string
   companyName: string
-  link: string // Ruta al proyecto
+  date: string
+  location: string
 }
 
 const WorkCard: React.FC<WorkCardProps> = ({
-  projectName,
+  jobTitle,
   companyName,
-  link,
+  date,
+  location
 }) => {
   return (
     <div className='work-card'>
       <div className='work-info'>
-        <h3 className='project-name'>{projectName}</h3>
+        <h3 className='job-title'>{jobTitle}</h3>
         <p className='company-name'>{companyName}</p>
-      </div>
-      <div className='btn-link'>
-        <Button link={link} icon={<RightArrowUpIcon />} variant='transparent' />
+        <p className='work-date'>{date}</p>
+        <p className='work-location'>{location}</p>
       </div>
     </div>
   )

@@ -10,6 +10,7 @@ import {
   WorkCard,
 } from '@/components/cards/index'
 import { studies } from '@/data/studies'
+import { work } from '@/data/work'
 
 import {
   LinkedinIcon,
@@ -18,7 +19,8 @@ import {
 
 import './home.css'
 import Tags from '@/components/tags/Tags'
-import '@fontsource-variable/onest'
+import '@fontsource-variable/onest/home.css';
+import ProjectCard from '@/components/cards/projectCard/projectCard'
 
 // Envuelve Responsive con WidthProvider
 const ResponsiveGridLayout = WidthProvider(Responsive)
@@ -94,10 +96,40 @@ const Home = () => {
         isResizable={false}
         margin={[32, 32]}
       >
+       
         <div key='1' className='grid-item' onClick={e => e.stopPropagation()}>
-          <WideCard
-            markdownPath='/data/introduction.md'
-          >
+          <StatusCard isSearching={true} />
+        </div>
+        <div key='2' className='grid-item' onClick={e => e.stopPropagation()}>
+          <ProjectCard
+            companyName=''
+            link='https://alonyanez.github.io/login'
+            projectName='Proyecto 1: Full Stack'
+          />
+        </div>
+        <div key='3' className='grid-item' onClick={e => e.stopPropagation()}>
+          <ProjectCard
+            companyName=''
+            link=''
+            projectName='Proyecto 2: Python + Análisis'
+          />
+        </div>
+        <div key='4' className='grid-item' onClick={e => e.stopPropagation()}>
+          <ProjectCard
+            companyName=''
+            link=''
+            projectName='Proyecto 3: DevOps'
+          />
+        </div>
+        <div key='5' className='grid-item' onClick={e => e.stopPropagation()}>
+          <ProjectCard
+            companyName=''
+            link='https://alonyanez.github.io/'
+            projectName='Portfololio Junior Unicorn'
+          />
+        </div>
+        <div key='6' className='grid-item' onClick={e => e.stopPropagation()}>
+          <AboutCard markdownPath='/data/about-me.md'>
             <Button
               link='https://www.linkedin.com/in/javaloyan/'
               icon={<LinkedinIcon />}
@@ -110,41 +142,6 @@ const Home = () => {
               variant='icon'
               external={true}
             />
-          </WideCard>
-        </div>
-        <div key='4' className='grid-item' onClick={e => e.stopPropagation()}>
-          <StatusCard isSearching={true} />
-        </div>
-        <div key='5' className='grid-item' onClick={e => e.stopPropagation()}>
-          <WorkCard
-            companyName=''
-            link='https://alonyanez.github.io/login'
-            projectName='Proyecto 1: Full Stack'
-          />
-        </div>
-        <div key='6' className='grid-item' onClick={e => e.stopPropagation()}>
-          <WorkCard
-            companyName=''
-            link=''
-            projectName='Proyecto 2: Python + Análisis'
-          />
-        </div>
-        <div key='7' className='grid-item' onClick={e => e.stopPropagation()}>
-          <WorkCard
-            companyName=''
-            link=''
-            projectName='Proyecto 3: DevOps'
-          />
-        </div>
-        <div key='8' className='grid-item' onClick={e => e.stopPropagation()}>
-          <WorkCard
-            companyName=''
-            link='https://alonyanez.github.io/'
-            projectName='Portfololio Junior Unicorn'
-          />
-        </div>
-        <div key='2' className='grid-item' onClick={e => e.stopPropagation()}>
-          <AboutCard markdownPath='/data/about-me.md'>
             <Tags technology='HTML' />
             <Tags technology='CSS' />
             <Tags technology='JavaScript' />
@@ -156,9 +153,19 @@ const Home = () => {
             <Tags technology='Node' />
           </AboutCard>
         </div>
-        <div key='3' className='grid-item' onClick={e => e.stopPropagation()}>
+        <div key='7' className='grid-item' onClick={e => e.stopPropagation()}>
           <StudiesCard studies={studies} />
         </div>
+
+        <div key='8' className='grid-item' onClick={e => e.stopPropagation()}>
+          <WorkCard
+            jobTitle='Junior Full Stack Developer'
+            companyName='NTT Data'
+            date=' Mar 2024 -  Sep 2024'
+            location='Sevilla, España'
+          />
+        </div>
+
         
        {/* <div key='9' className='grid-item' onClick={e => e.stopPropagation()}>
           {/*<FooterCard />
