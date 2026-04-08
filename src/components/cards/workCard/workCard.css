@@ -19,6 +19,15 @@
     }
 }
 
+.work-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
 .project-name {
   font-size: 1.25rem;
   font-weight: 600;
