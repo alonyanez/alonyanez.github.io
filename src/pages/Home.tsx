@@ -3,14 +3,12 @@ import { Responsive, WidthProvider } from 'react-grid-layout'
 
 import Button from '@/components/button/Button'
 import {
-  WideCard,
   AboutCard,
   StudiesCard,
   StatusCard,
   WorkCard,
 } from '@/components/cards/index'
 import { studies } from '@/data/studies'
-import { work } from '@/data/work'
 
 import {
   LinkedinIcon,
