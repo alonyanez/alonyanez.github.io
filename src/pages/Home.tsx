@@ -138,7 +138,6 @@ const Home = () => {
                 external={true}
               />
 
-            <div className="divider"></div>
               <Tags technology='HTML' />
               <Tags technology='CSS' />
               <Tags technology='JavaScript' />
