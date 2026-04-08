@@ -12,20 +12,12 @@
 
 .work-info {
   margin: 1rem;
+  text-align: left;
   h2 {
         font-size: 3.5rem;
         font-weight: 700;
     }
 }
-
-.work-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin: 1rem 0;
-}
-
 
 .project-name {
   font-size: 1.25rem;
@@ -61,8 +53,6 @@
   transition: all .3s ease;
   box-shadow: 2px 2px 0 0 var(--border-color);
 }
-
-
 
 @media (Width <= 1297px) {
   .work-card .work-info .project-name {

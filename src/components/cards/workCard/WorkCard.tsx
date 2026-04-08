@@ -22,7 +22,6 @@ const WorkCard: React.FC<WorkCardProps> = ({
         <p className='company-name'>{companyName}</p>
         <p className='work-date'>{date}</p>
         <p className='work-location'>{location}</p>
-       
       </div>
     </div>
   )
