@@ -153,7 +153,7 @@ const Home = () => {
 
         <div key='3' className='grid-item' onClick={e => e.stopPropagation()}>
           <WorkCard
-            jobTitle='Junior Full Stack Developer'
+            jobTitle='Junior Full Stack'
             companyName='NTT Data'
             date=' Mar 2024 -  Sep 2024'
             location='Sevilla, España'
