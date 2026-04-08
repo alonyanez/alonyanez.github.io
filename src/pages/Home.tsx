@@ -124,7 +124,7 @@ const Home = () => {
         </div>
         <div key='2' className='grid-item' onClick={e => e.stopPropagation()}>
           <AboutCard markdownPath='/data/about-me.md'>
-            <div>
+            <div className='grid-item'>
               <Button
                 link='https://www.linkedin.com/in/javaloyan/'
                 icon={<LinkedinIcon />}
@@ -139,7 +139,7 @@ const Home = () => {
               />
             </div>
             <div className="divider"></div>
-            <div>
+            <div className='grid-item'>
               <Tags technology='HTML' />
               <Tags technology='CSS' />
               <Tags technology='JavaScript' />
