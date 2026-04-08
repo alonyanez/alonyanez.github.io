@@ -124,7 +124,7 @@ const Home = () => {
         </div>
         <div key='2' className='grid-item' onClick={e => e.stopPropagation()}>
           <AboutCard markdownPath='/data/about-me.md'>
-            <div className='grid-item'>
+  
               <Button
                 link='https://www.linkedin.com/in/javaloyan/'
                 icon={<LinkedinIcon />}
@@ -137,9 +137,8 @@ const Home = () => {
                 variant='icon'
                 external={true}
               />
-            </div>
+
             <div className="divider"></div>
-            <div className='grid-item'>
               <Tags technology='HTML' />
               <Tags technology='CSS' />
               <Tags technology='JavaScript' />
@@ -149,7 +148,7 @@ const Home = () => {
               <Tags technology='Astro' />
               <Tags technology='MySQL' />
               <Tags technology='Node' />
-            </div>
+   
           </AboutCard>
         </div>
         <div key='1' className='grid-item' onClick={e => e.stopPropagation()}>
