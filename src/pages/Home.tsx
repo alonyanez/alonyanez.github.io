@@ -26,9 +26,9 @@ const ResponsiveGridLayout = WidthProvider(Responsive)
 const Home = () => {
   const [layouts] = useState({
     lg: [
-      { i: '1', x: 0, y: 1, w: 1, h: 10 },
+      { i: '1', x: 0, y: 1, w: 1, h: 7 },
       { i: '2', x: 2, y: 0, w: 1, h: 14 },
-      { i: '3', x: 0, y: 1, w: 1, h: 10 },
+      { i: '3', x: 0, y: 1, w: 1, h: 7 },
       { i: '4', x: 1, y: 1, w: 1, h: 2 },
       { i: '5', x: 1, y: 2, w: 1, h: 2 },
       { i: '6', x: 1, y: 3, w: 1, h: 2 },
