@@ -17,7 +17,7 @@ import {
 
 import './home.css'
 import Tags from '@/components/tags/Tags'
-import '@fontsource-variable/onest/home.css';
+//import '@fontsource-variable/onest'
 import ProjectCard from '@/components/cards/projectCard/projectCard'
 
 // Envuelve Responsive con WidthProvider
