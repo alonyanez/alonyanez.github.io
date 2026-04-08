@@ -9,9 +9,14 @@
   transition: transform 0.3s;
 }
 
+
 .work-info {
   margin: 1rem;
   text-align: left;
+  h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
 }
 
 .project-name {
