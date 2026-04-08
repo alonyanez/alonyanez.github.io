@@ -124,28 +124,31 @@ const Home = () => {
         </div>
         <div key='2' className='grid-item' onClick={e => e.stopPropagation()}>
           <AboutCard markdownPath='/data/about-me.md'>
-            <Button
-              link='https://www.linkedin.com/in/javaloyan/'
-              icon={<LinkedinIcon />}
-              variant='icon'
-              external={true}
-            />
-            <Button
-              link='https://github.com/alonyanez'
-              icon={<GithubIcon />}
-              variant='icon'
-              external={true}
-            />
-            <div className="divider"></div>
-            <Tags technology='HTML' />
-            <Tags technology='CSS' />
-            <Tags technology='JavaScript' />
-            <Tags technology='TypeScript' />
-            <Tags technology='Sass' />
-            <Tags technology='React' />
-            <Tags technology='Astro' />
-            <Tags technology='MySQL' />
-            <Tags technology='Node' />
+            <div className="divider">
+              <Button
+                link='https://www.linkedin.com/in/javaloyan/'
+                icon={<LinkedinIcon />}
+                variant='icon'
+                external={true}
+              />
+              <Button
+                link='https://github.com/alonyanez'
+                icon={<GithubIcon />}
+                variant='icon'
+                external={true}
+              />
+            </div>
+            <div className="divider">
+              <Tags technology='HTML' />
+              <Tags technology='CSS' />
+              <Tags technology='JavaScript' />
+              <Tags technology='TypeScript' />
+              <Tags technology='Sass' />
+              <Tags technology='React' />
+              <Tags technology='Astro' />
+              <Tags technology='MySQL' />
+              <Tags technology='Node' />
+            </div>
           </AboutCard>
         </div>
         <div key='1' className='grid-item' onClick={e => e.stopPropagation()}>
