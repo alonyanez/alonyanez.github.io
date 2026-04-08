@@ -124,7 +124,7 @@ const Home = () => {
         </div>
         <div key='2' className='grid-item' onClick={e => e.stopPropagation()}>
           <AboutCard markdownPath='/data/about-me.md'>
-            <div className="social-links">
+            <div>
               <Button
                 link='https://www.linkedin.com/in/javaloyan/'
                 icon={<LinkedinIcon />}
@@ -139,7 +139,7 @@ const Home = () => {
               />
             </div>
             <div className="divider"></div>
-            <div className="tech-tags">
+            <div>
               <Tags technology='HTML' />
               <Tags technology='CSS' />
               <Tags technology='JavaScript' />
