@@ -151,11 +151,11 @@ const Home = () => {
             <Tags technology='Node' />
           </AboutCard>
         </div>
-        <div key='3' className='grid-item' onClick={e => e.stopPropagation()}>
+        <div key='1' className='grid-item' onClick={e => e.stopPropagation()}>
           <StudiesCard studies={studies} />
         </div>
 
-        <div key='1' className='grid-item' onClick={e => e.stopPropagation()}>
+        <div key='3' className='grid-item' onClick={e => e.stopPropagation()}>
           <WorkCard
             jobTitle='Junior Full Stack Developer'
             companyName='NTT Data'
