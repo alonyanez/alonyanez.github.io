@@ -17,7 +17,7 @@ const WorkCard: React.FC<WorkCardProps> = ({
   return (
     <div className='work-card'>
       <div className='work-info'>
-        <h2>Estudios</h2>
+        <h2>Trabajos</h2>
         <h3 className='job-title'>{jobTitle}</h3>
         <p className='company-name'>{companyName}</p>
         <p className='work-date'>{date}</p>
