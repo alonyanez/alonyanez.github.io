@@ -5,7 +5,7 @@ import { authService } from '../services/authService';
 // Importamos tus componentes y estilos
 import Button from '@/components/button/Button';
 import './Login.css'; 
-import '@fontsource-variable/onest';
+//import '@fontsource-variable/onest';
 
 export default function Login() {
   const [email, setEmail] = useState('');
