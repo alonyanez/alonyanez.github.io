@@ -17,7 +17,7 @@ export default function Login() {
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        const response = await fetch('"https://alonyanez.github.io"/api/health', {
+        const response = await fetch('/api/auth/health', {
           method: 'GET',
           mode: 'cors'
         });
@@ -94,7 +94,7 @@ export default function Login() {
               </>
             )}
         </Button>
-        
+
           <p className="login-footer">
             ¿No tienes cuenta? <Link to="/register" className="login-link">Regístrate</Link>
           </p>
