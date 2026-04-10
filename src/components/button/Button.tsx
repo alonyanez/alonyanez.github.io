@@ -9,6 +9,7 @@ interface ButtonProps {
   label?: string
   children?: React.ReactNode
   variant?: 'primary' | 'secondary' | 'disabled' | 'icon' | 'transparent'
+  disabled?: boolean
   size?: number // Agrega propiedad para tamaño
   external?: boolean // Nueva propiedad para enlaces externos
   onClick?: () => void | Promise<void>
@@ -22,6 +23,7 @@ const Button: React.FC<ButtonProps> = ({
   label,
   children,
   variant = 'primary',
+  disabled = false,
   size = 24, // Valor por defecto
   external = false, // Valor por defecto
   onClick,
@@ -81,6 +83,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       className={`button ${variant}`}
+      disabled={disabled}
       onMouseDown={handleMouseDown}
       onClick={onClick}
       style={style}
