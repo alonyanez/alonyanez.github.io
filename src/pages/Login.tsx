@@ -17,7 +17,7 @@ export default function Login() {
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        const response = await fetch('/api/auth/health', {
+        const response = await fetch('https://habituall.onrender.com/api/auth/health', {
           method: 'GET',
           mode: 'cors'
         });
