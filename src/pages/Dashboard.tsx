@@ -87,7 +87,7 @@ export default function TareaForm() {
             <Button onClick={() => navigate('/tareas/nueva')} variant="primary" style={{ padding: '0.6rem 1rem', fontSize: '0.9rem' }}>
               + Nueva
             </Button>
-            <Button onClick={handleLogout} variant="secondary" style={{ padding: '0.6rem 1rem', fontSize: '0.9rem', background: 'rgba(255,0,0,0.1)', border: '1px solid rgba(255,0,0,0.2)' }}>
+            <Button onClick={handleLogout} variant="primary" style={{ padding: '0.6rem 1rem', fontSize: '0.9rem' }}>
               Salir
             </Button>
           </div>
