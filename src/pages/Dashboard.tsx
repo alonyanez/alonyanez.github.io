@@ -10,7 +10,7 @@ import './Login.css';
 export default function TareaForm() {
   const [tareas, setTareas] = useState<Tarea[]>([]);
   const [loading, setLoading] = useState(true);
-  const [serverStatus, setServerStatus] = useState<'checking' | 'online' | 'offline'>('checking');
+  //const [serverStatus, setServerStatus] = useState<'checking' | 'online' | 'offline'>('checking');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,12 +21,11 @@ export default function TareaForm() {
     try {
       // Opcional: Verificar salud del servidor como en el Login
       const response = await fetch('https://habituall.onrender.com/api/auth/health');
-      if (response.ok) setServerStatus('online');
+      if (response.ok) console.log('online');
       
       await cargarTareas();
     } catch (error) {
-      setServerStatus('offline');
-      console.error(error);
+      console.error(error, 'offline');
     } finally {
       setLoading(false);
     }

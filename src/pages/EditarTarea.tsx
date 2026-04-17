@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { tareaService, Tarea } from '../services/tareaService';
+import { tareaService } from '../services/tareaService';
 
 import Button from '@/components/button/Button';
 import './Login.css'; 
