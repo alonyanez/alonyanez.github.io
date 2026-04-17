@@ -8,6 +8,7 @@ import TareaForm from './pages/TareaForm'
 import { ProjectDetails } from '@/pages/projects'
 import { authService } from './services/authService'
 import { JSX } from 'react'
+import EditarTarea from './pages/EditarTarea'
 
 function PrivateRoute({ children }: { children: JSX.Element }) {
   return authService.isAuthenticated() ? children : <Navigate to="/login" />
@@ -32,6 +33,13 @@ function App() {
           <TareaForm />
         </PrivateRoute>
       } />
+
+        <Route path='/tareas/editar/:id' element={
+          <PrivateRoute>
+            <EditarTarea />
+          </PrivateRoute>
+        } />
+
 
       <Route path='*' element={<Navigate to='/' />} />
     </Routes>
