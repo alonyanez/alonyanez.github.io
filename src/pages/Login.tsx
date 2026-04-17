@@ -42,7 +42,7 @@ export default function Login() {
     e.preventDefault();
     try {
       await authService.login({ email, password });
-      navigate('/dashboard');
+      if(localStorage.getItem('token')) navigate('/dashboard');
     } catch (err) {
       setError('Credenciales incorrectas');
     }
