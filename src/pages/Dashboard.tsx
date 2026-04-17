@@ -69,14 +69,7 @@ export default function TareaForm() {
 
   return (
     <div className="login-container">
-      {/* Usamos un max-width un poco más grande para la lista */}
       <div className="login-card" style={{ maxWidth: '800px', width: '95%' }}>
-        
-        {/* Badge de estado igual que en Login */}
-        <div className={`server-badge ${serverStatus}`} style={{ marginBottom: '2rem' }}>
-          <span className="dot"></span>
-          {serverStatus === 'online' ? 'Sincronizado con Render' : 'Conectando...'}
-        </div>
 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
           <div>

@@ -1,5 +1,13 @@
 import { api } from "./api";
 
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
 export interface Tarea {
     id?: number;
     titulo: string;
@@ -30,6 +38,11 @@ export const tareaService = {
 
     completar: async (id: number, completada: boolean): Promise<Tarea> => {
         const response = await api.put(`/api/tarea/completarTarea/${id}/completar?completada=${completada}`);
+        return response.data;
+    },
+
+    obtenerPorId: async (id: number): Promise<Tarea> => {
+        const response = await api.get(`/api/tarea/obtenerTarea/${id}`);
         return response.data;
     }
     
